@@ -43,6 +43,19 @@ usernames_and_passwords = {
     'Math' : 0,
     'Winter' : 10
 }
+while (True):
+    username = input('Enter your username:')
+    password = int(input('Enter your password:'))
+
+    if username in usernames_and_passwords:
+        print('Username is found!')
+        if usernames_and_passwords[username] == password:
+            print('Password is correct. You are now logged in.')
+            break
+        else:
+            print('Invaild Password. Please try again!')
+    else:
+        print('Username is invailid')
 
 #Write a Python program to:
 #Take input from the user for the following details:
